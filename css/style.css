@@ -9,10 +9,6 @@
     box-sizing: border-box;
 }
 
-header {
-    margin: auto;
-}
-
 body {
     background-color: #77cece;
     font-family: Arial, Helvetica, sans-serif;
@@ -33,8 +29,9 @@ nav {
     gap: 5%;
     margin-top: 1em;
     position: sticky;
-    /* WTFFF 2chk */
+    /* not working. WTFFF 2chk */
     top: 5;
+    /* goes outside near 768px window size 2 chk */
 }
 
 nav a {
@@ -116,11 +113,16 @@ td {
     text-align: center;
 }
 
+.form1 {
+    border: 2px solid;
+    border-radius: 5px;
+    max-width: 50%;
+}
+
 .input1 {
     display: flex;
     flex-direction: column;
     padding: 0.5em;
-    max-width: 50%;
 
 }
 
