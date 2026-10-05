@@ -20,31 +20,190 @@
 <body>
     <H1 id="start">MAIN Header</H1>
     <main>
-        <section>
-            <article>
+        <section id="description">
+            <article class="card1">
                 <h2>HTML</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quis eaque hic, numquam perferendis
-                    facere pariatur earum! Ipsam, corporis at.
+                <div>
+                    <a href="https://html.spec.whatwg.org/" target="_blank"> <img src="./images/html_ico.png"
+                            alt="All about HTML"></a>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quis eaque hic, numquam
+                        perferendis facere pariatur earum! Ipsam, corporis at.</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>amet consectetur</li>
+                        <li>ipsum dolor</li>
+                        <li>facere pariatur</li>
+                        <li>iusto dicta</li>
+                        <li>dolorum asperiores</li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="https://html.spec.whatwg.org/" target="_blank">All about HTML</a>
+
+                </div>
             </article>
-            <article>
+            <article class="card1">
                 <h2>CSS</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut animi exercitationem natus vero,
-                    dolorum asperiores, expedita iusto dicta id hic excepturi placeat voluptas voluptatibus autem.
+                <div>
+                    <a href="https://www.w3.org/Style/CSS/specs.en.html" target="_blank"> <img
+                            src="./images/css_ico.png" alt="All about CSS"></a>
+                </div>
+                <div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut animi exercitationem natus vero,
+                        dolorum asperiores, expedita iusto dicta id hic excepturi placeat voluptas voluptatibus autem.
+                    </p>
+                </div>
+
+                <div>
+                    <ol>
+                        <li>amet consectetur</li>
+                        <li>ipsum dolor</li>
+                        <li>facere pariatur</li>
+                        <li>iusto dicta</li>
+                        <li>dolorum asperiores</li>
+                    </ol>
+                </div>
+                <div>
+                    <a href="https://www.w3.org/Style/CSS/specs.en.html" target="_blank">All about CSS</a>
+
+                </div>
             </article>
-            <article>
+            <article class="card1">
                 <h2>GIT</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus debitis ipsa nemo repudiandae rem,
-                    voluptatibus saepe quo odit suscipit consequatur quia, minima autem maiores necessitatibus
-                    blanditiis ipsum dolore non earum!
+                <div>
+                    <a href="https://git-scm.com/" target="_blank"> <img src="./images/git_ico.png"
+                            alt="All about GIT"></a>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus debitis ipsa nemo repudiandae
+                        rem,
+                        voluptatibus saepe quo odit suscipit consequatur quia, minima autem maiores necessitatibus
+                        blanditiis ipsum dolore non earum!</p>
+                </div>
+                <div>
+                    <a href="https://git-scm.com/" target="_blank">All about GIT</a>
+
+                </div>
             </article>
-            <article>
+            <article class="card1">
                 <h2>PHP</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat exercitationem ducimus facilis,
-                    soluta omnis odit.</p>
+                <div>
+                    <a href="https://www.php-fig.org/psr/" target="_blank"> <img src="./images/PHP_ico.png"
+                            alt="All about PHP"></a>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat exercitationem ducimus facilis,
+                        soluta omnis odit.</p>
+                </div>
+                </div>
+                <div>
+                    <a href="https://www.php-fig.org/psr/" target="_blank">All about PHP</a>
+
+                </div>
             </article>
+        </section>
+        <section id="courses">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course name</th>
+                        <th>Course start</th>
+                        <th>Lorem, ipsum.</th>
+                        <th>adipisicing elit</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>
+                        HTML
+                    </td>
+                    <td>2026 September</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>adipisicing elit</td>
+                </tr>
+                <tr>
+                    <td>
+                        CSS
+                    </td>
+                    <td>2026 Oktober</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>adipisicing elit</td>
+                </tr>
+                <tr>
+
+                    <td>
+                        GIT
+                    </td>
+                    <td>2026 November</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>adipisicing elit</td>
+                </tr>
+                <tr>
+                    <td>
+                        PHP
+                    </td>
+                    <td>2026 December</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>adipisicing elit</td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td>*</td>
+                    </tr>
+                </tfoot>
+            </table>
+
         </section>
 
     </main>
+    <form action="#" method="get">
+        <H2>Ask a question</H2>
+        <div>
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="email">Your email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="phone">Your phone number</label>
+            <input type="text" name="phone" id="phone">
+        </div>
+        <div>
+            <label for="course_sel">Course</label>
+            <select type="text" name="course_sel" id="course_sel">
+                <option disabled selected hidden> -- </option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="git">GIT</option>
+                <option value="php">PHP</option> \
+            </select>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Mācību veids:</legend>
+                <input type="radio" name="learn_type" id="learn_type" value="1">
+                <label for="learn_type">Klātienē</label>
+
+                <input type="radio" name="learn_type" id="learn_type" value="2">
+                <label for="learn_type2">Neklātienē</label>
+            </fieldset>
+        </div>
+        <div>
+            <label for="question">Enter your question here</label>
+            <textarea name="question" id="question" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="agree">Agree</label>
+            <input type="checkbox" name="agree" id="agree" required>
+        </div>
+        <div>
+            <input type="submit" name="submit" id="submit">
+        </div>
+    </form>
 </body>
 <footer>
 
