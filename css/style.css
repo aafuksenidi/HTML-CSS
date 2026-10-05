@@ -73,10 +73,9 @@ h1 {
 }
 
 #description {
-    padding: 1em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    gap: 2em;
     margin-bottom: 4em;
 
 }
@@ -85,8 +84,9 @@ h1 {
     border: 2px solid;
     border-radius: 1em;
     padding: 1em;
+    margin: 1em;
     min-width: 250px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 img {
