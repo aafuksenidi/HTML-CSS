@@ -1,5 +1,16 @@
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+
 * {
     box-sizing: border-box;
+}
+
+header {
+    margin: auto;
 }
 
 body {
@@ -7,17 +18,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.2;
     font-size: 15px;
-    font-weight: 300;
-    text-align: left;
     width: 80%;
     max-width: 1200px;
     margin: auto;
 
 }
 
+
+
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: end;
     gap: 5%;
     margin-top: 1em;
@@ -30,8 +41,15 @@ nav a {
     border: 2px solid;
     border-radius: 2em;
     padding: 1em;
+    min-width: 10rem;
     background-color: rgb(166, 226, 218);
+    text-align: center;
 
+}
+
+nav a:hover {
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
 }
 
 H1 {
@@ -43,12 +61,15 @@ H1 {
 
 .smalltxt {
     color: rgb(39, 3, 59);
+    padding-bottom: 2em;
 }
 
 #description {
+    padding: 1em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
+    margin-bottom: 4em;
 
 }
 
@@ -71,4 +92,53 @@ img {
 
 div a {
     text-decoration: none;
+}
+
+div a:focus {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+table {
+    margin: 5em;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: aquamarine;
+    padding: 0.5em;
+}
+
+#VerySpecial {
+    text-align: center;
+}
+
+.input1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    max-width: 50%;
+
+}
+
+.input2 {
+    display: block;
+}
+
+.input1 label {
+    padding-bottom: 0.5em;
+}
+
+footer {
+    margin-top: 3em;
+}
+
+footer div {
+    display: flex;
+
+    background-color: #75dddd;
+    justify-content: space-around;
 }

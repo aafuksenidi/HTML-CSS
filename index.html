@@ -8,16 +8,17 @@
     <meta name="description" content="Kontroldarbs_HTML_CSS_2_dala">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<header>
-    <nav>
-        <a href="#start">Sākums</a>
-        <a href="#courses">Kursi</a>
-        <a href="#description">Apraksts</a>
-        <a href="#kontacts">Kontakti</a>
-    </nav>
-</header>
+
 
 <body>
+    <header>
+        <nav>
+            <a href="#start">Sākums</a>
+            <a href="#description">Apraksts</a>
+            <a href="#courses">Kursi</a>
+            <a href="#kontacts">Kontakti</a>
+        </nav>
+    </header>
     <h1 id="start">MAIN Header</h1>
     <main>
         <p class="smalltxt">Short description here Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nemo
@@ -155,7 +156,7 @@
                 </tr>
                 <tfoot>
                     <tr>
-                        <td>*</td>
+                        <td colspan="4" id="VerySpecial">*</td>
                     </tr>
                 </tfoot>
             </table>
@@ -164,20 +165,20 @@
 
     </main>
     <form action="#" method="get">
-        <H2>Ask a question</H2>
-        <div>
+        <h2>Ask a question</h2>
+        <div class="input1">
             <label for="name">Your name</label>
             <input type="text" name="name" id="name">
         </div>
-        <div>
+        <div class="input1">
             <label for="email">Your email</label>
             <input type="email" name="email" id="email" required>
         </div>
-        <div>
+        <div class="input1">
             <label for="phone">Your phone number</label>
             <input type="text" name="phone" id="phone">
         </div>
-        <div>
+        <div class="input1">
             <label for="course_sel">Course</label>
             <select type="text" name="course_sel" id="course_sel">
                 <option disabled selected hidden> -- </option>
@@ -187,31 +188,38 @@
                 <option value="php">PHP</option> \
             </select>
         </div>
-        <div>
+        <div class="input1">
             <fieldset>
                 <legend>Mācību veids:</legend>
-                <input type="radio" name="learn_type" id="learn_type" value="1">
+                <input type="radio" name="learn_type" id="learn_type1" value="1">
                 <label for="learn_type">Klātienē</label>
 
-                <input type="radio" name="learn_type" id="learn_type" value="2">
+                <input type="radio" name="learn_type" id="learn_type2" value="2">
                 <label for="learn_type2">Neklātienē</label>
             </fieldset>
         </div>
-        <div>
+        <div class="input1">
             <label for="question">Enter your question here</label>
             <textarea name="question" id="question" rows="4" cols="50"></textarea>
         </div>
-        <div>
+        <div class="input1 input2">
             <label for="agree">Agree</label>
             <input type="checkbox" name="agree" id="agree" required>
         </div>
-        <div>
+        <div class="input1">
             <input type="submit" name="submit" id="submit">
         </div>
     </form>
+    <footer>
+        <div>
+            <p>Contacts:</p>
+            <p>phone: 123456789</p>
+            <p>
+                <a href="mailto:no@one.lv">no@one.lv</a>
+            </p>
+        </div>
+    </footer>
 </body>
-<footer>
 
-</footer>
 
 </html>
