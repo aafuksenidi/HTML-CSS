@@ -13,9 +13,9 @@
 <body>
     <header>
         <nav>
-            <a href="#start">Sākums</a>
-            <a href="#description">Apraksts</a>
-            <a href="#courses">Kursi</a>
+            <a href="#start1">Sākums</a>
+            <a href="#description1">Apraksts</a>
+            <a href="#courses1">Kursi</a>
             <a href="#kontacts">Kontakti</a>
         </nav>
     </header>
@@ -26,7 +26,7 @@
             quidem nulla minima qui exercitationem consectetur, ab natus consequatur facilis dolores mollitia nostrum
             reprehenderit. Eius, dicta. Commodi dolor natus non assumenda tempore officia, odit tempora fugit
             voluptatum?</p>
-        <h2>Course description</h2>
+        <h2 id="description1">Course description</h2>
         <section id="description">
 
 
@@ -114,7 +114,7 @@
                 </div>
             </article>
         </section>
-        <h2>Time table</h2>
+        <h2 id="courses1">Time table</h2>
         <section id="courses">
 
 
@@ -198,11 +198,20 @@
             <div class="input1">
                 <fieldset>
                     <legend>Mācību veids:</legend>
-                    <input type="radio" name="learn_type" id="learn_type1" value="1">
-                    <label for="learn_type">Klātienē</label>
+                    <div>
+                        <input type="radio" name="learn_type" id="learn_type1" value="1">
+                        <label for="learn_type">Klātienē</label>
+                    </div>
 
-                    <input type="radio" name="learn_type" id="learn_type2" value="2">
-                    <label for="learn_type2">Neklātienē</label>
+                    <div>
+                        <input type="radio" name="learn_type" id="learn_type2" value="2">
+                        <label for="learn_type2">Neklātienē</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="learn_type" id="learn_type3" value="3">
+                        <label for="learn_type2">Vel varianti</label>
+                    </div>
                 </fieldset>
             </div>
             <div class="input1">

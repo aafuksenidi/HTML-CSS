@@ -2,6 +2,15 @@
     nav {
         flex-direction: column;
     }
+
+    nav a {
+        width: 100%;
+        padding-bottom: 3px;
+    }
+
+    fieldset {
+        flex-direction: column;
+    }
 }
 
 
@@ -20,17 +29,19 @@ body {
 
 }
 
-
+header {
+    position: sticky;
+    top: 0;
+    background-color: #77cece;
+}
 
 nav {
     display: flex;
     justify-content: space-around;
-    align-items: end;
+    align-items: center;
     gap: 5%;
     margin-top: 1em;
-    position: sticky;
-    /* not working. WTFFF 2chk */
-    top: 5;
+
     /* goes outside near 768px window size 2 chk */
 }
 
@@ -49,7 +60,7 @@ nav a:hover {
     background-color: rgb(255, 255, 255);
 }
 
-H1 {
+h1 {
     text-align: center;
     text-transform: uppercase;
     font-style: italic;
@@ -107,6 +118,11 @@ td {
     border-collapse: collapse;
     background-color: aquamarine;
     padding: 0.5em;
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-between;
 }
 
 #VerySpecial {
